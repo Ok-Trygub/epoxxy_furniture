@@ -1,0 +1,277 @@
+@import "../../assets/styles/styles_config";
+
+.post {
+  background-color: #FBFAF8;
+  padding: 24px 0 80px;
+  margin-bottom: 90px;
+
+  &__wrapper {
+    padding-top: 30px;
+  }
+
+  &__textBground {
+    background-color: #FFFFFF;
+  }
+
+  &__text {
+    max-width: 1080px;
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  &__img {
+    margin-top: 30px;
+  }
+
+  &__divider {
+    margin: 30px 0 24px;
+  }
+
+  &__mainTitle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: $navigationColor;
+  }
+
+  &__date {
+    color: #E05614;
+    margin: 16px 0 30px;
+  }
+
+  &__minorTitle {
+    font-size: 20px;
+  }
+
+  &__minorTitleMargin {
+    margin: 30px 0 20px;
+  }
+
+  &__carouselWrapper {
+    padding: 40px 0 20px;
+  }
+
+  &__carouselWrapper {
+    .carousel-control-prev-icon {
+      background-image: url('../../assets/images/postPrevIcon.png');
+      width: 60px;
+      height: 60px;
+    }
+
+    .carousel-control-next-icon {
+      background-image: url('../../assets/images/postNextIcon.png');
+      width: 60px;
+      height: 60px;
+    }
+
+    .carousel-control-prev {
+      top: 330px;
+      left: 35%;
+    }
+
+    .carousel-control-next {
+      top: 330px;
+      left: 52%;
+    }
+  }
+
+  &__carouselTitle {
+    color: #999999;
+    padding-bottom: 120px;
+  }
+
+  &__textDivider {
+    color: #E05614;
+    opacity: initial;
+    margin: 40px 0 20px;
+  }
+
+  &__likeTitle {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 80px 0 40px;
+    color: #422F26;
+  }
+}
+
+.sign {
+  background-color: #FFFFFF;
+  padding-bottom: 41px;
+}
+
+
+@media (min-width: 410px) {
+  .post {
+    &__carouselWrapper {
+      .carousel-control-prev {
+        top: 355px;
+      }
+
+      .carousel-control-next {
+        top: 355px;
+      }
+    }
+  }
+}
+
+@media (min-width: 458px) {
+  .post {
+    &__carouselWrapper {
+      .carousel-control-prev {
+        top: 379px;
+      }
+
+      .carousel-control-next {
+        top: 379px;
+      }
+    }
+  }
+}
+
+@media (min-width: 458px) {
+  .post {
+    &__carouselWrapper {
+      .carousel-control-prev {
+        top: 392px;
+      }
+
+      .carousel-control-next {
+        top: 392px;
+      }
+    }
+  }
+}
+
+@media (min-width: 458px) {
+  .post {
+    &__carouselWrapper {
+      .carousel-control-prev {
+        top: 410px;
+      }
+
+      .carousel-control-next {
+        top: 410px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .post {
+    padding: 40px 0 100px;
+    margin-bottom: 104px;
+
+    &__wrapper {
+      padding-top: 60px;
+    }
+
+    &__img {
+      margin-top: 60px;
+    }
+
+    &__divider {
+      margin: 40px 0 32px;
+    }
+
+    &__mainTitle {
+      font-size: 30px;
+    }
+
+    &__date {
+      margin: 16px 0 60px;
+    }
+
+    &__minorTitleMargin {
+      margin: 40px 0 20px;
+    }
+
+    &__textDivider {
+      margin: 60px 0 30px;
+    }
+
+    &__carouselWrapper {
+      padding: 100px 0 30px;
+
+      .carousel-control-prev {
+        top: 244px;
+        left: 38%;
+      }
+
+      .carousel-control-next {
+        top: 244px;
+        left: 50%;
+      }
+    }
+
+    &__carouselTitle {
+      padding-bottom: 160px;
+    }
+  }
+
+  .sign {
+    padding-bottom: 103px;
+
+    &__itemsWrapper {
+      max-width: 1080px;
+      margin: 0 auto;
+      letter-spacing: 2px;
+    }
+
+    &__sharePost {
+      margin-right: 20px;
+    }
+  }
+
+  &__likeTitle {
+    margin: 100px 0 58px;
+  }
+
+
+}
+
+@include desktop-xl {
+  .post {
+    &__carouselWrapper {
+      .carousel-control-prev {
+        top: 290px;
+        left: 39%;
+      }
+
+      .carousel-control-next {
+        top: 290px;
+        left: 48%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .post {
+    &__carouselWrapper {
+      .carousel-control-prev {
+        top: 325px;
+        left: 41%;
+      }
+
+      .carousel-control-next {
+        top: 325px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .post {
+    &__carouselWrapper {
+      .carousel-control-prev {
+        top: 363px;
+      }
+
+      .carousel-control-next {
+        top: 363px;
+      }
+    }
+  }
+}
+
+

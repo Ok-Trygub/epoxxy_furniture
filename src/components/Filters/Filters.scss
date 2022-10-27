@@ -1,0 +1,258 @@
+@import "src/assets/styles/styles_config";
+
+.filters {
+  background-color: #FFFFFF;
+  padding: 60px 40px 0;
+
+  &__title {
+    color: #32324D;
+    letter-spacing: 2.5px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__priceWrapper {
+    margin-top: 24px;
+  }
+
+
+  .rs-slider-progress-bar {
+    background-color: #E05614;
+  }
+
+  .rs-slider-handle:before {
+    border: 2px solid #E05614;
+  }
+
+  .rs-slider-handle:focus:before, .rs-slider-handle:hover:before {
+    box-shadow: none;
+  }
+
+  &__priceInput {
+    border: 1px solid #666666;
+    outline: none;
+    padding: 8px;
+    max-width: 120px;
+  }
+
+  &__priceInput::placeholder {
+    font-size: 10px;
+    line-height: 1;
+    color: #999999;
+  }
+
+  &__priceBtn {
+    border: none;
+    width: 73px;
+    height: 36px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    background-color: #E05614;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__divider {
+    margin: 16px 0 30px;
+  }
+
+  &__categoryWrapper {
+    padding-bottom: 60px;
+    letter-spacing: 2px;
+  }
+
+  &__checkboxInput {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__checkboxInput + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  &__checkboxInput + label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #E05614;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  &__checkboxInput:checked + label::before {
+    border-color: #E05614;
+    background-color: #E05614;
+    background-image: url("../../assets/images/check.png");
+  }
+
+  &__checkboxInput:not(:disabled):active + label::before {
+    background-color: #E05614;
+    border-color: #E05614;
+  }
+
+  &__whiteCheckboxInput + label::before {
+    border: 2px solid #E3DCCF;
+  }
+
+  &__whiteCheckboxInput:checked + label::before {
+    border-color: #E3DCCF;
+    background-color: #FFFFFF;
+    background-image: url("../../assets/images/orangeCheck.png");
+  }
+
+  &__whiteCheckboxInput:not(:disabled):active + label::before {
+    background-color: #FFFFFF;
+    border-color: #E3DCCF;
+  }
+
+  &__blackCheckboxInput + label::before {
+    border: 1px solid #000000;
+    background-color: #000000;
+  }
+
+  &__blackCheckboxInput:checked + label::before {
+    border-color: #000000;
+    background-color: #000000;
+  }
+
+  &__blackCheckboxInput:not(:disabled):active + label::before {
+    background-color: #000000;
+    border-color: #000000;
+  }
+
+  &__goldCheckboxInput + label::before {
+    border: 1px solid #FF8A52;
+    background-color: #FF8A52;
+  }
+
+  &__goldCheckboxInput:checked + label::before {
+    border-color: #FF8A52;
+    background-color: #FF8A52;
+  }
+
+  &__goldCheckboxInput:not(:disabled):active + label::before {
+    background-color: #FF8A52;
+    border-color: #FF8A52;
+  }
+
+  &__orangeCheckboxInput + label::before {
+    border: 1px solid #FE9214;
+    background-color: #FE9214;
+  }
+
+  &__orangeCheckboxInput:checked + label::before {
+    border-color: #FE9214;
+    background-color: #FE9214;
+  }
+
+  &__orangeCheckboxInput:not(:disabled):active + label::before {
+    background-color: #FE9214;
+    border-color: #FE9214;
+  }
+
+  &__beigeCheckboxInput + label::before {
+    border: 1px solid #E3DCCF;
+    background-color: #E3DCCF;
+  }
+
+  &__beigeCheckboxInput:checked + label::before {
+    border-color: #E3DCCF;
+    background-color: #E3DCCF;
+  }
+
+  &__beigeCheckboxInput:not(:disabled):active + label::before {
+    background-color: #E3DCCF;
+    border-color: #E3DCCF;
+  }
+
+  &__grayCheckboxInput + label::before {
+    border: 1px solid #666666;
+    background-color: #666666;
+  }
+
+  &__grayCheckboxInput:checked + label::before {
+    border-color: #666666;
+    background-color: #666666;
+  }
+
+  &__grayCheckboxInput:not(:disabled):active + label::before {
+    background-color: #666666;
+    border-color: #666666;
+  }
+
+  .rs-slider {
+    max-width: 330px;
+  }
+}
+
+@include desktop {
+  .filters {
+    &__priceInput {
+      max-width: 200px;
+    }
+
+    .rs-slider {
+      max-width: 365px;
+    }
+  }
+}
+
+
+@include desktop-xl {
+  .filters {
+    &__priceInput {
+      max-width: 60px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .filters {
+    &__priceInput {
+      padding: 15px;
+      max-width: 90px;
+    }
+
+    .rs-slider {
+      max-width: 100%;
+    }
+
+    .rc-slider-rail {
+      width: 80%;
+    }
+
+    &__priceBtn {
+      height: 50px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .filters {
+    &__priceInput {
+      max-width: 110px;
+    }
+
+    &__priceInput::placeholder {
+      font-size: 16px;
+    }
+
+    .rc-slider-rail {
+      width: 88%;
+    }
+
+    &__priceBtn {
+      margin-left: 20px;
+    }
+  }
+}

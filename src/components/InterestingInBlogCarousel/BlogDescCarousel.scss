@@ -1,0 +1,27 @@
+@import "src/assets/styles/styles_config";
+
+@include desktop {
+  .interestingInBlogDescCarousel {
+    .carousel-control-prev {
+      top: -110px;
+      left: 76%;
+    }
+
+    .carousel-control-next {
+      top: -110px;
+      left: 88%;
+    }
+  }
+}
+
+@include desktop-xl {
+  .interestingInBlogDescCarousel {
+    .carousel-control-prev {
+      left: 83%;
+    }
+
+    .carousel-control-next {
+      left: 90%;
+    }
+  }
+}

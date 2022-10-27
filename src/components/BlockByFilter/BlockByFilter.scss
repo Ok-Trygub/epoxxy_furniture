@@ -1,0 +1,33 @@
+@import "src/assets/styles/styles_config";
+
+.blocks {
+  background-color: #FBFAF8;
+  padding-bottom: 80px;
+
+  &__itemsWrapper {
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 3px;
+    color: $navigationColor;
+    padding: 80px 0 47px;
+  }
+
+  &__item {
+    margin-right: 15px;
+  }
+}
+
+@include desktop-xl {
+  .blocks {
+    padding-bottom: 124px;
+
+    &__itemsWrapper {
+      font-size: 30px;
+      padding: 120px 0 61px;
+    }
+
+    &__item {
+      margin-right: 30px;
+    }
+  }
+}

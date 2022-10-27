@@ -1,0 +1,242 @@
+@import "src/assets/styles/styles_config";
+
+.firstBlock {
+  &__carouselWrapper {
+    background-color: #FBFAF8;
+    padding: 60px 0 160px 20px;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 1.26;
+    letter-spacing: 3px;
+    margin: 10px 0 10px;
+    color: #32324D;
+  }
+
+  &__sale {
+    background-color: #FBFAF8;
+    margin-bottom: 10px;
+    padding: 110px 0 60px 20px;
+  }
+
+  &__saleTitle {
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 3px;
+    color: #32324D;
+    margin: 30px 0 16px;
+  }
+
+  &__price {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 2px;
+  }
+}
+
+.newPrice {
+  margin-right: 12px;
+  color: #FF6666;
+}
+
+.oldPrice {
+  color: #E05614;
+  text-decoration: line-through;
+}
+
+.carouselDivider {
+  margin: 0 0 30px 20px;
+}
+
+.bigImgMob {
+  margin-bottom: 10px;
+}
+
+
+.firstBlockCarousel {
+  .carouselTitle {
+    font-size: 30px;
+    line-height: 1.26;
+    letter-spacing: 3px;
+    color: #32324D;
+    max-width: 376px;
+    padding: 0 10px 0 20px;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url('../../assets/images/aboutUs/carousel_prev.png');
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url('../../assets/images/aboutUs/carousel_next.png');
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel-control-prev {
+    top: 150px;
+    left: 5%;
+  }
+
+  .carousel-control-next {
+    top: 150px;
+    left: 26%;
+  }
+}
+
+
+@media (min-width: 495px) {
+  .firstBlockCarousel {
+    .carousel-control-prev {
+      top: 150px;
+      left: 8px;
+    }
+
+    .carousel-control-next {
+      top: 150px;
+      left: 18%;
+    }
+  }
+}
+
+
+@include desktop {
+  .firstBlockCarousel {
+    .carousel-control-prev {
+      top: 150px;
+      left: 0;
+    }
+
+    .carousel-control-next {
+      top: 150px;
+      left: 12%;
+    }
+  }
+}
+
+
+@include desktop-xl {
+  .firstBlock {
+    margin-bottom: 20px;
+
+    &__carouselWrapper {
+      margin-bottom: 10px;
+      height: 50%;
+    }
+
+    &__sale {
+      background-color: #FBFAF8;
+      margin-bottom: 10px;
+    }
+
+    &__textColumnWrapper {
+      padding: 30px 0 30px 60px;
+    }
+
+    &__title {
+      padding-bottom: 248px;
+    }
+
+    &__sale {
+      height: 50%;
+      margin: 0;
+    }
+
+    &__bigImgColumn {
+      padding: 0;
+    }
+
+    &__bigImg {
+      height: 100%;
+    }
+
+    .carouselDivider {
+      margin-bottom: 15px;
+    }
+  }
+
+  .firstBlockCarousel {
+    .carousel-control-prev {
+      top: 138px;
+      left: 3%;
+    }
+
+    .carousel-control-next {
+      top: 138px;
+      left: 24%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .firstBlock {
+    &__textColumnWrapper {
+      padding: 100px 40px;
+
+      .firstBlockCarousel {
+        .carousel-control-prev {
+          top: 145px;
+        }
+
+        .carousel-control-next {
+          top: 145px;
+          left: 22%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          height: 60px;
+          width: 60px;
+        }
+      }
+
+      .carouselDivider {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .firstBlock {
+    &__textColumnWrapper {
+      padding: 60px 60px 100px;
+
+      .firstBlockCarousel {
+        .carousel-control-prev {
+          left: 1%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .firstBlock {
+    .firstBlockCarousel {
+      .carousel-control-next {
+        left: 16%;
+      }
+    }
+  }
+}

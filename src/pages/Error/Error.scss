@@ -1,0 +1,67 @@
+@import "src/assets/styles/styles_config";
+
+.error {
+  background-color: #FBFAF8;
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  &__logo {
+    margin: 59px 0 120px;
+    width: 82px;
+    height: 22px;
+  }
+
+  &__wrapper {
+    background-color: #FFFFFF;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 80px 16px;
+    box-shadow: 0 10px 20px rgba(204, 204, 204, 0.25);
+  }
+
+  &__number {
+    text-transform: uppercase;
+    color: #422F26;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #FF8A52;
+  }
+
+  &__title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 30px 0 16px;
+  }
+
+  &__text {
+    max-width: 500px;
+    color: #666666;
+    font-size: 18px;
+    line-height: 1.33;
+    padding-bottom: 30px;
+  }
+
+}
+
+
+@include desktop-xl {
+  .error {
+    &__logo {
+      margin: 19px 0 110px;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin: 40px 0 16px;
+    }
+
+    &__text {
+      padding-bottom: 40px;
+    }
+  }
+
+}
+

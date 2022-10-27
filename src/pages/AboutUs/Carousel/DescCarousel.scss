@@ -1,0 +1,67 @@
+@import "src/assets/styles/styles_config";
+
+@include desktop-xl {
+  .aboutUsDescCarousel {
+    &__item {
+      max-width: 300px;
+    }
+
+    .carousel-control-prev-icon {
+      background-image: url('../../../assets/images/aboutUs/carousel_prev.png');
+      width: 60px;
+      height: 60px;
+    }
+
+    .carousel-control-next-icon {
+      background-image: url('../../../assets/images/aboutUs/carousel_next.png');
+      width: 60px;
+      height: 60px;
+    }
+
+    .carousel-control-prev {
+      top: 240px;
+      left: 36%;
+    }
+
+    .carousel-control-next {
+      top: 240px;
+      left: 47%;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .aboutUsDescCarousel {
+    &__item {
+      max-width: 370px;
+    }
+
+    .carousel-control-prev {
+      top: 290px;
+    }
+
+    .carousel-control-next {
+      top: 290px;
+    }
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .aboutUsDescCarousel {
+    &__item {
+      max-width: 425px;
+    }
+
+    .carousel-control-prev {
+      top: 320px;
+    }
+
+    .carousel-control-next {
+      top: 320px;
+    }
+  }
+}
+
+

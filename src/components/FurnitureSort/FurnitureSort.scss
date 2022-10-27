@@ -1,0 +1,67 @@
+@import "src/assets/styles/styles_config";
+
+
+@include desktop-xl {
+  .sort {
+    color: $navigationColor;
+    font-size: 10px;
+
+    &__itemWrapper {
+      padding: 4px 4px;
+      margin-right: 10px;
+      border: 1px solid #E3DCCF;
+      background-color: #FFFFFF;
+    }
+
+    &__itemWrapper:active {
+      color: #FFFFFF;
+      background-color: #FF8A52;
+    }
+
+    &__name {
+      color: #E05614;
+      margin-right: 3px;
+    }
+
+    &__value {
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+
+    &__crossImg {
+      padding: 0 0 2px 4px;
+    }
+
+    &__divider {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .sort {
+    font-size: 11px;
+
+    &__itemWrapper {
+      padding: 4px 10px;
+      margin-right: 10px;
+    }
+
+    &__name {
+      margin-right: 6px;
+    }
+
+    &__crossImg {
+      padding: 0 0 2px 10px;
+    }
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .sort {
+    font-size: 13px;
+
+  }
+}

@@ -1,0 +1,178 @@
+@import "src/assets/styles/styles_config";
+
+.cardCarousel {
+  .carousel-control-prev-icon {
+    background-image: url('../../assets/images/carouselPrevLight.png');
+    width: 30px;
+    height: 30px;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url('../../assets/images/carouselNextLight.png');
+    width: 30px;
+    height: 30px;
+  }
+
+  .carousel-control-prev {
+    top: 148px;
+    left: 0;
+  }
+
+  .carousel-control-next {
+    top: 148px;
+    left: 84%;
+  }
+
+  &__btn {
+    width: 188px;
+    height: 50px;
+    color: #FFFFFF;
+    border: none;
+    background-color: #E05614;
+    margin: 10px 0 20px;
+  }
+
+  &__price {
+    margin-bottom: 20px;
+  }
+
+  &__tag {
+    top: 20px;
+    left: 20px;
+  }
+
+  &__dataWrapper {
+    background-color: #FFFFFF;
+  }
+
+  &__hr {
+    margin: 30px 0 20px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+
+  &__oldPrice {
+    letter-spacing: 1px;
+    color: #E05614;
+    line-height: 1;
+    margin-left: 8px;
+  }
+
+  &__oldPriceThrough {
+    text-decoration: line-through;
+  }
+
+  &__newPrice {
+    letter-spacing: 1px;
+    color: #F23333;
+    line-height: 1;
+  }
+}
+
+
+
+@media (min-width: 578px) {
+  .cardCarousel {
+    .carousel-control-prev {
+      top: 190px;
+      left: -1%;
+    }
+
+    .carousel-control-next {
+      top: 190px;
+      left: 85%;
+    }
+  }
+}
+
+@include desktop {
+  .cardCarousel {
+    .carousel-control-prev {
+      top: 276px;
+    }
+
+    .carousel-control-next {
+      top: 276px;
+      left: 86%;
+    }
+  }
+}
+
+@include desktop-xl {
+  .cardCarousel {
+    margin: 0 40px 40px 0;
+    max-width: 178.66px;
+
+    .carousel-control-prev-icon {
+      display: none;
+    }
+
+    .carousel-control-next-icon {
+      display: none;
+    }
+
+    .carousel-control-prev {
+      top: 90px;
+      left: 4%;
+    }
+
+    .carousel-control-next {
+      top: 90px;
+      left: 79%;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    &__dataWrapper {
+      height: 140px;
+    }
+
+    &__btnMaxWidth {
+      max-width: 160px;
+    }
+
+    &__hoverTitle {
+      color: #422F26;
+    }
+  }
+
+  .cardCarousel:hover {
+    .carousel-control-prev-icon {
+      display: flex;
+    }
+
+    .carousel-control-next-icon {
+      display: flex;
+    }
+  }
+
+  .cardCarousel:last-child{
+    margin-right: 0;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .cardCarousel {
+    max-width: 218px;
+
+    &__btn {
+      width: 188px;
+    }
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .cardCarousel {
+    max-width: 258.66px;
+  }
+}

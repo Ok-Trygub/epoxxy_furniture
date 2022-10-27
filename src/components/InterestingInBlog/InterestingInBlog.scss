@@ -1,0 +1,28 @@
+@import "src/assets/styles/styles_config";
+
+.interestingInBlog {
+  background-color: #FBFAF8;
+  margin-bottom: 92px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+}
+
+.btnWrapper {
+  padding: 40px 0 56px;
+}
+
+@include desktop {
+  .interestingInBlog {
+    margin-bottom: 124px;
+
+    &__title {
+      margin-bottom: 58px;
+    }
+  }
+
+  .btnWrapper {
+    padding: 54px 0 120px;
+  }
+}

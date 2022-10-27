@@ -1,0 +1,15 @@
+@import "src/assets/styles/styles_config";
+
+@include desktop {
+  .productPageDescCarousel {
+    .carousel-control-prev {
+      top: -104px;
+      left: 81%;
+    }
+
+    .carousel-control-next {
+      top: -104px;
+      left: 89%;
+    }
+  }
+}

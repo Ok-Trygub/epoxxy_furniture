@@ -1,0 +1,182 @@
+@import "src/assets/styles/styles_config";
+
+.header {
+  .navbar {
+    padding: 0;
+  }
+
+  &__phone {
+    font-size: 16px;
+    color: #32324D;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #DBA514;
+  }
+
+  &__mobMenuWrapper {
+    display: flex;
+    align-items: center;
+    height: 76px;
+  }
+
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand img:hover,
+  .navbar-brand img:active {
+    cursor: pointer;
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    border: none;
+    margin-right: 22px;
+  }
+
+  .collapsed {
+    .navbar-toggler-icon {
+      background-image: url("../../assets/images/header/mobMenuOpen.png");
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("../../assets/images/header/mobMenuClose.png");
+    width: 46px;
+    height: 46px;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .show > .nav-link {
+    color: $navigationColor;
+  }
+
+  .navbar-nav-scroll {
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    padding-top: 40px;
+  }
+
+  .searchIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@include desktop-xl {
+  .header {
+    position: relative;
+
+    &__mobMenuWrapper {
+      height: 100px;
+    }
+
+    .dropdown, .dropdown-center, .dropend, .dropstart, .dropup, .dropup-center {
+      position: static;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+      position: absolute;
+      width: 101%;
+      padding: 60px 0 60px;
+      margin: 0;
+    }
+
+    .navbar-nav-scroll {
+      min-height: auto;
+      padding: 0;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding: 0;
+      margin-right: 15px;
+      font-size: 15px;
+    }
+
+    .navIcon {
+      max-width: 100%;
+    }
+
+    .navbar-brand img {
+      width: 115px;
+      height: 35px;
+      margin-right: 35px;
+    }
+
+    &__phone {
+      margin-right: 15px;
+      font-size: 14px;
+    }
+
+    &__search {
+      width: 200px;
+      height: 46px;
+      padding: 15px;
+      margin: 0 8px 0;
+      border: none;
+      outline: none;
+    }
+  }
+
+  .dropdown-toggle::after {
+    content: url("../../assets/images/header/downIcon.png");
+    display: inline-block;
+    vertical-align: 2px;
+    border: none;
+  }
+
+  .show {
+    .dropdown-toggle::after {
+      content: url("../../assets/images/header/upIcon.png");
+      display: inline-block;
+      vertical-align: 2px;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    &__search {
+      width: 240px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+      margin-right: 15px;
+      font-size: 16px;
+    }
+
+    &__phone {
+      font-size: 16px;
+    }
+
+    .searchIcon {
+      width: 46px;
+      height: 46px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      margin-right: 19px;
+    }
+  }
+}

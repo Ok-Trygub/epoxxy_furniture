@@ -1,0 +1,74 @@
+@import "src/assets/styles/styles_config";
+
+.textPage {
+  background-color: #FBFAF8;
+  padding: 24px 0 80px;
+  margin-bottom: 89px;
+
+  &__title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #422F26;
+    margin: 30px 0 30px;
+  }
+
+  &__titlesBlock {
+    background-color: #FFFFFF;
+    padding: 40px;
+    margin: 0 0 30px 0;
+    color: #422F26;
+    width: 100%;
+  }
+
+  &__desclaimer {
+    margin: 30px 0 30px;
+  }
+
+  &__link:hover,
+  &__link:active {
+    border-bottom: 1px solid #FF8A52;
+  }
+
+  &__mainRulesLink {
+    border-bottom: 1px solid #FF8A52;
+  }
+
+  &__borderNone {
+    border-bottom: none;
+  }
+}
+
+
+@include desktop {
+  .textPage {
+    padding: 40px 0 100px;
+    margin-bottom: 104px;
+
+    &__title {
+      font-size: 30px;
+      margin: 54px 0 54px;
+    }
+
+    &__desclaimer {
+      margin: 40px 0 40px;
+    }
+  }
+}
+
+@include desktop-xl {
+  .textPage {
+    &__titlesBlock {
+      padding: 60px 110px 0 60px;
+      margin: 0 40px 0 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .textPage {
+    &__titlesBlock {
+      padding: 60px 231px 0 60px;
+      margin: 0 40px 0 0;
+    }
+  }
+}

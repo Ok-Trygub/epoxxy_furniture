@@ -1,0 +1,21 @@
+@import "src/assets/styles/styles_config";
+
+.inspirationWrapper {
+  background-color: #FBFAF8;
+  padding-bottom: 80px;
+}
+
+.inspirationTitle {
+  margin: 30px 0 40px;
+}
+
+@include desktop {
+  .inspirationWrapper {
+    padding-bottom: 265px;
+  }
+
+  .inspirationTitle {
+    margin: 30px 0 54px;
+  }
+}
+

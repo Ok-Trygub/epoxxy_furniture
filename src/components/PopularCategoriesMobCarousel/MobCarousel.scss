@@ -1,0 +1,74 @@
+@import "src/assets/styles/styles_config";
+
+.carousel-indicators {
+  display: none;
+}
+
+.popularCategoriesMobCarousel {
+  .carousel-control-prev {
+    top: -110px;
+    left: 68%;
+  }
+
+  .carousel-control-next {
+    top: -110px;
+    left: 88%;
+  }
+}
+
+@media (min-width: 576px) {
+  .popularCategoriesMobCarousel {
+    .carousel-control-prev {
+      top: -95px;
+      left: 73%;
+    }
+
+    .carousel-control-next {
+      top: -95px;
+      left: 88%;
+    }
+  }
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+  transition: none;
+  height: 15%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('../../assets/images/carousel_prev.png');
+  width: 60px;
+  height: 60px;
+}
+
+.carousel-control-next-icon {
+  background-image: url('../../assets/images/carousel_next.png');
+  width: 60px;
+  height: 60px;
+}
+
+
+@include desktop {
+  .popularCategoriesMobCarousel {
+    .carousel-control-prev {
+      left: 76%;
+    }
+
+    .carousel-control-next {
+      left: 88%;
+    }
+  }
+}
+
+@include desktop-xl {
+  .popularCategoriesMobCarousel {
+    .carousel-control-prev {
+      left: 78%;
+    }
+
+    .carousel-control-next {
+      left: 88%;
+    }
+  }
+}

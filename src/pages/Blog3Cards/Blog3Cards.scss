@@ -1,0 +1,12 @@
+@import "src/assets/styles/styles_config";
+
+.blog3CardsWrapper{
+  padding-top: 24px;
+  background-color: #FBFAF8;
+}
+
+@include desktop{
+  .blog3CardsWrapper{
+    padding-top: 40px;
+  }
+}

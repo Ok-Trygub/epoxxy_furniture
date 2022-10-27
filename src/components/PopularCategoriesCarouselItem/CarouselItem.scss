@@ -1,0 +1,40 @@
+@import "src/assets/styles/styles_config";
+
+.categoryImg {
+  max-width: 160px;
+}
+
+.categoryItemWrapper {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.categoryItemWrapper:hover,
+.categoryItemWrapper:active {
+  border-top: 2px solid #FF8A52;
+}
+
+.categoryName {
+  letter-spacing: 2px;
+  padding-left: 20px;
+}
+
+@include desktop-xl{
+  .categoryImg {
+    max-width: 130px;
+  }
+
+  .categoryName {
+    padding-left: 15px;
+  }
+
+  .categoryName:hover, .categoryName:active, {
+    color: #422F26;
+  }
+}
+
+@media (min-width: 1400px) {
+  .categoryImg {
+    max-width: 160px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "src/assets/styles/styles_config";
+
+.productProperties {
+  color: $navigationColor;
+
+  &__title {
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+  &__titleDivider {
+    margin: 10px 0 40px;
+  }
+
+  &__divider {
+    margin: 20px 0 20px;
+  }
+
+  &__descriptionText {
+    color: #422F26;
+  }
+}
+
+@include desktop-xl {
+  .productProperties {
+    &__lastDimensionDivider {
+      margin: 20px 0 0 0;
+    }
+  }
+}

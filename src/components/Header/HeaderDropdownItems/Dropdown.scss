@@ -1,0 +1,67 @@
+@import "src/assets/styles/styles_config";
+
+.headerDropdown {
+  .nav-link {
+    color: $navigationColor;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 0 0 40px 0;
+  }
+
+  &__blocksWrapper {
+    padding-bottom: 40px;
+  }
+
+  &__columnWrapper {
+    width: 50%;
+  }
+
+  &__item {
+    color: $navigationColor;
+    padding: 0 0 12px 0;
+  }
+
+  &__item:hover,
+  &__item:active {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: $navigationColor;
+  }
+
+  &__lastItem {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #FF8A52;
+  }
+
+  .dropdown-menu {
+    border: none;
+    padding: 0;
+  }
+}
+
+@include desktop-xl {
+  .headerDropdownTitle {
+    font-size: 13px;
+  }
+
+  .headerDropdown {
+    &__columnWrapper {
+      width: auto;
+    }
+
+    .nav-link {
+      padding: 0 10px 0 0;
+    }
+
+    .dropdown-menu {
+      border-top: 1px solid grey;
+      border-radius: 0;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .headerDropdownTitle {
+    font-size: 16px;
+  }
+}

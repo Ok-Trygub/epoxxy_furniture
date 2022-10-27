@@ -1,0 +1,10 @@
+@import "src/assets/styles/styles_config";
+
+.categories {
+  background-color: #FBFAF8;
+  padding-bottom: 80px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+}

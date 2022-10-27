@@ -1,0 +1,72 @@
+@import "src/assets/styles/styles_config";
+
+.orderMessage {
+  background-color: #FBFAF8;
+  padding: 24px 0 80px;
+  margin-bottom: 89px;
+
+  &__wrapper {
+    padding: 80px 0 80px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(204, 204, 204, 0.25);
+    max-width: 1080px;
+  }
+
+  &__links {
+    padding-bottom: 30px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  &__id {
+    letter-spacing: 2px;
+    color: #422F26;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #FF8A52;
+  }
+
+  &__title {
+    margin: 30px 0 16px;
+    font-size: 30px;
+    line-height: 1.25;
+    letter-spacing: 3px;
+    color: #422F26;
+  }
+
+  &__text {
+    max-width: 660px;
+    padding: 0 10px 0;
+  }
+
+  &__email {
+    color: #666666;
+    margin-bottom: 40px;
+  }
+}
+
+
+@include desktop {
+  .orderMessage {
+    padding: 40px 0 100px;
+    margin-bottom: 104px;
+
+    &__wrapper {
+      padding: 100px 0 100px;
+    }
+
+    &__links {
+      padding-bottom: 100px;
+    }
+
+    &__title {
+      margin: 40px 0 16px;
+    }
+
+    &__text {
+      padding: 0;
+    }
+  }
+}

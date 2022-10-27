@@ -1,0 +1,31 @@
+@import "src/assets/styles/styles_config";
+
+.linkBtn {
+  width: 343px;
+  height: 60px;
+  border: none;
+  background-color: #E05614;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.12;
+
+  &__img {
+    margin-left: 14px;
+  }
+}
+
+.linkBtn:hover {
+background-color: #422F26;
+}
+
+
+@include desktop-xl {
+  .linkBtn {
+    width: 299px;
+    height: 60px;
+  }
+}
+

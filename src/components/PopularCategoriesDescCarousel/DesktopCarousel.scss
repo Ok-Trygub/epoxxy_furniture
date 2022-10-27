@@ -1,0 +1,15 @@
+@import "src/assets/styles/styles_config";
+
+@include desktop-xl{
+  .popularCategoriesDescCarousel{
+    .carousel-control-prev {
+      top: -95px;
+      left: 82%;
+    }
+
+    .carousel-control-next {
+      top: -95px;
+      left: 90%;
+    }
+  }
+}

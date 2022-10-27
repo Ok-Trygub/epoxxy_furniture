@@ -1,0 +1,274 @@
+@import "src/assets/styles/styles_config";
+
+.product {
+  background-color: #FBFAF8;
+  padding: 24px 0 80px;
+
+  &__wrapper {
+    margin: 0 0 60px;
+  }
+
+  &__title {
+    letter-spacing: 3px;
+    color: #422F26;
+    margin: 30px 0 16px;
+  }
+
+  &__reviews {
+    border-bottom: 1px solid #FF8A52;
+    color: #422F26;
+    margin-left: 10px;
+  }
+
+  &__divider {
+    margin: 30px 0 30px;
+  }
+
+  &__propertyTitle {
+    letter-spacing: 2px;
+    color: #666666;
+  }
+
+  &__dimensionsTitle {
+    margin-right: 9px;
+  }
+
+  &__colorWrapper {
+    margin-bottom: 30px;
+  }
+
+  &__dimensionFirstProperty {
+    font-size: 13px;
+    color: #FF8A52;
+    background-color: #FFFFFF;
+    padding: 7px 9px;
+    margin-bottom: 16px;
+  }
+
+  &__dimensionSecondProperty {
+    font-size: 13px;
+    color: #E05614;
+    background-color: #FFFFFF;
+    padding: 7px 9px;
+  }
+
+  &__quantityWrapper {
+    padding: 30px 0 30px;
+  }
+
+  &__quantityText {
+    margin: 0 16px 0;
+  }
+
+  &__deliveryWrapper {
+    border-left: 1px solid #E3DCCF;
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+
+  &__deliveryText {
+    padding-left: 8px;
+  }
+
+  &__btn {
+    width: 204px;
+    height: 60px;
+    background-color: #E05614;
+    border: none;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-right: 20px;
+  }
+
+  &__likeTitle {
+    margin: 40px 0 40px;
+  }
+
+  &__reviewWrapper {
+    padding-top: 60px;
+  }
+
+  &__customerReviewTitle {
+    color: $navigationColor;
+    font-size: 24px;
+    margin: 30px 0 40px;
+  }
+
+  &__customerReviewText {
+    color: #666666;
+    font-size: 18px;
+    margin: 40px 0 40px;
+  }
+
+  .addReview {
+    padding-top: 60px;
+    color: $navigationColor;
+
+    &__title {
+      font-size: 24px;
+      color: $navigationColor;
+      margin: 30px 0 40px;
+    }
+
+    &__inputWrapper {
+      margin: 50px 0 40px 0;
+    }
+
+    &__btn {
+      width: 100%;
+      height: 60px;
+      background-color: #E3DCCF;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 0;
+      letter-spacing: 2px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .form-control {
+      border: 1px solid #666666;
+      border-radius: 0;
+      height: 46px;
+      color: #422F26;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .form-control:focus {
+      border: 1px solid #FF8A52;
+      box-shadow: none;
+    }
+
+    &__reviewInput {
+      .form-control {
+        height: 80px;
+      }
+    }
+  }
+}
+
+
+@include desktop-xl {
+  .product {
+    padding: 40px 0 100px;
+
+    &__wrapper {
+      margin: 54px 0 100px;
+    }
+
+    &__bigImg {
+      padding: 0 20px 0 10px;
+      margin: 0;
+    }
+
+    &__divider {
+      margin: 40px 0 40px;
+    }
+
+    &__colorWrapper {
+      margin-bottom: 35px;
+    }
+
+
+    &__colorTitle {
+      margin-right: 50px;
+    }
+
+    &__dimensionFirstProperty {
+      margin: 0;
+    }
+
+    &__dimensionsWrapper {
+      margin-right: 5px;
+    }
+
+    &__dimensionFirstProperty {
+      font-size: 10px;
+    }
+
+    &__dimensionSecondProperty {
+      font-size: 10px;
+      margin: 0 0 0 10px;
+    }
+
+    &__quantityWrapper {
+      padding: 30px 0 40px;
+    }
+
+    &__quantityTitle {
+      margin-right: 57px;
+    }
+
+    &__deliveryWrapper {
+      margin-left: 20px;
+    }
+
+    &__largeDivider {
+      margin: 100px 0 100px;
+    }
+
+    &__likeTitle {
+      margin: 0 0 58px;
+    }
+
+    &__reviewWrapper {
+      padding-top: 118px;
+    }
+
+    &__customerReviewTitle {
+      margin: 30px 0 60px;
+    }
+
+    &__customerReviewText {
+      margin: 60px 0 60px;
+    }
+
+    .customerReviewsWrapper {
+      margin-right: 20px;
+    }
+
+    .addReview {
+      padding-top: 0;
+      width: 340px;
+
+      &__title {
+        margin: 30px 0 60px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .product {
+    &__color {
+      margin-right: 90px;
+    }
+
+    &__colorTitle {
+      margin-right: 90px;
+    }
+
+    &__dimensionsTitle {
+      margin-right: 34px;
+    }
+
+    &__dimensionFirstProperty {
+      font-size: 13px;
+    }
+
+    &__dimensionSecondProperty {
+      font-size: 13px;
+    }
+
+    .customerReviewsWrapper {
+      width: 750px;
+    }
+
+    .addReview {
+      width: 440px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.carouselWithIndicators {
+  padding: 30px 0 110px;
+
+  .carouselItemWrapper {
+    max-width: 343px;
+  }
+
+  .carousel-indicators {
+    display: block;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: none;
+  }
+
+  .carousel-indicators {
+    display: flex;
+    bottom: 50px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    height: 11px;
+    background-image: url("../../assets/images/productPage/sliderIcon.png");
+    background-color: inherit;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .slideImg {
+    min-width: 16px;
+    max-width: 100%;
+  }
+}
+

@@ -1,0 +1,144 @@
+@import "src/assets/styles/styles_config";
+
+.contacts {
+  background-color: #FBFAF8;
+  padding: 24px 0 80px;
+  margin-bottom: 80px;
+
+  &__wrapper {
+    background-color: #FFFFFF;
+    padding: 40px 20px 40px;
+    margin: 0 -12px 0;
+  }
+
+  &__mainTitle {
+    letter-spacing: 3px;
+    font-size: 24px;
+    margin: 30px 0 30px;
+    color: $navigationColor;
+  }
+
+  &__title {
+    color: $navigationColor;
+    letter-spacing: 3px;
+    font-size: 20px;
+  }
+
+  &__icon {
+    margin-right: 34px;
+  }
+
+  &__seo {
+    margin: 12px 0 16px;
+  }
+
+  &__email {
+    color: #E05614;
+  }
+
+  &__phone {
+    color: #E05614;
+    margin: 8px 0 8px;
+  }
+
+  &__divider {
+    margin: 40px 0 40px;
+  }
+
+  &__acceptOrders {
+    margin: 12px 0 16px;
+  }
+
+  &__form {
+    margin-top: 30px;
+  }
+
+  .form-label {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .form-control {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: $navigationColor;
+    box-shadow: none;
+    border: 1px solid #422F26;
+    border-radius: 0;
+  }
+
+  .form-control:focus {
+    border: 1px solid #E05614;
+  }
+
+  .form-control::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .formTextarea {
+    height: 90px;
+    padding: 15px !important;
+  }
+
+  &__btnWrapper {
+    margin-top: 30px;
+  }
+
+  &__verticalDivider {
+    margin: 0 20px 0;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .contacts {
+    &__wrapper {
+      margin: 0;
+    }
+  }
+}
+
+
+@include desktop-xl {
+  .contacts {
+    padding: 40px 0 100px;
+    margin-bottom: 100px;
+
+    &__wrapper {
+      padding: 60px 60px 80px;
+    }
+
+    &__mainTitle {
+      font-size: 30px;
+      margin: 54px 0 54px;
+    }
+
+    &__form {
+      margin-top: 40px;
+    }
+
+    &__verticalDivider {
+      margin: 0 80px 0 40px;
+    }
+
+    &__nameInput {
+      margin-right: 30px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .contacts {
+    &__wrapper {
+      padding: 60px 160px 80px 60px;
+    }
+  }
+}

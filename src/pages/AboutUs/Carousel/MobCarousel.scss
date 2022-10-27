@@ -1,0 +1,86 @@
+@import "src/assets/styles/styles_config";
+
+.aboutUsMobCarousel {
+  .carousel-control-prev-icon {
+    background-image: url('../../../assets/images/aboutUs/carousel_prev.png');
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url('../../../assets/images/aboutUs/carousel_next.png');
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel-control-prev {
+    top: 275px;
+    left: 30%;
+  }
+
+  .carousel-control-next {
+    top: 275px;
+    left: 51%;
+  }
+}
+
+@media (min-width: 390px) {
+  .aboutUsMobCarousel {
+    .carousel-control-prev {
+      top: 290px;
+    }
+
+    .carousel-control-next {
+      top: 290px;
+    }
+  }
+}
+
+@media (min-width: 430px) {
+  .aboutUsMobCarousel {
+    .carousel-control-prev {
+      top: 320px;
+    }
+
+    .carousel-control-next {
+      top: 320px;
+    }
+  }
+}
+
+@media (min-width: 475px) {
+  .aboutUsMobCarousel {
+    .carousel-control-prev {
+      top: 330px;
+    }
+
+    .carousel-control-next {
+      top: 330px;
+    }
+  }
+}
+
+@media (min-width: 490px) {
+  .aboutUsMobCarousel {
+    .carousel-control-prev {
+      top: 365px;
+    }
+
+    .carousel-control-next {
+      top: 365px;
+    }
+  }
+}
+
+@include desktop {
+  .aboutUsCarousel {
+    .carousel-control-prev {
+      top: 375px;
+    }
+
+    .carousel-control-next {
+      top: 375px;
+    }
+  }
+}
+

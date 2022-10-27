@@ -1,0 +1,70 @@
+@import "src/assets/styles/styles_config";
+
+.inspirationCard {
+  margin: 0 10px 10px 0;
+
+  &__cardWrapper:last-child {
+    margin: 0 0 10px 0;
+  }
+
+  &__statistic {
+    background-color: #FFFFFF;
+    padding: 14px 0 25px 25px;
+  }
+
+  &__likeIcon {
+    margin-right: 7px;
+  }
+
+  &__likeCount {
+    margin-right: 19px;
+  }
+
+  &__commentIcon {
+    margin-right: 7px;
+  }
+
+  &__statisticText {
+    font-size: 14px;
+    color: #32324D;
+  }
+}
+
+@include desktop-xl {
+  .inspirationCard {
+    height: 235px;
+
+    &__statistic {
+      padding: 14px 10px 25px;
+    }
+
+    &__likeCount {
+      margin-right: 10px;
+    }
+
+    &__sign {
+      font-size: 10px;
+      color: #422F26;
+      padding-right: 5px;
+    }
+
+    &__likeIcon {
+      margin-right: 5px;
+    }
+
+    &__likeCount {
+      margin-right: 10px;
+    }
+
+    &__commentIcon {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .inspirationCard__sign {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+}

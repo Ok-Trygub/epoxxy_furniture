@@ -1,0 +1,82 @@
+@import "src/assets/styles/styles_config";
+
+.card {
+  border: none;
+  margin-bottom: 16px;
+  cursor: pointer;
+  padding-bottom: 50px;
+
+  &__hr {
+    margin: 30px 0 20px;
+  }
+
+  &__title {
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #666666;
+  }
+
+  &__newPrice {
+    letter-spacing: 1px;
+    color: #F23333;
+    line-height: 1;
+  }
+
+  &__oldPrice {
+    letter-spacing: 1px;
+    color: #E05614;
+    line-height: 1;
+    margin-bottom: 50px;
+    margin-left: 8px;
+  }
+
+  &__oldPriceThrough {
+    text-decoration: line-through;
+  }
+
+  &__tag {
+    top: 20px;
+    left: 20px;
+  }
+
+  &__btn {
+    border: none;
+    width: 188px;
+    height: 50px;
+    background-color: #E05614;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 20px 0 20px;
+  }
+
+
+  &__btn:hover,
+  &__btn:active {
+    background-color: #422F26;
+  }
+}
+
+@include desktop {
+  .card {
+    margin-right: 20px;
+  }
+
+  .card:last-child {
+    margin-right: 0;
+  }
+}
+
+@include desktop-xl {
+  .card {
+    margin: 0 40px 40px 0;
+
+    &__btn {
+      display: none;
+    }
+  }
+}

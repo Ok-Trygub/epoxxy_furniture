@@ -1,0 +1,51 @@
+@import "src/assets/styles/styles_config";
+
+.interestingCard {
+  background-color: #FFFFFF;
+
+  &__dataWrapper {
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    margin: 15px 0 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__divider {
+    margin: 25px 0 0;
+  }
+
+  &__date {
+    color: #E05614;
+  }
+
+  &__link span, &__link span:hover, &__link span:active {
+    color: #422F26 !important;
+    cursor: pointer;
+  }
+
+  span, span:hover {
+    color: #666666;
+  }
+}
+
+.activeCardDate {
+  color: #FF8A52;
+}
+
+@include desktop {
+  .bg-white {
+    background-color: #FFFFFF;
+  }
+
+  .bg-inherit {
+    background-color: #FBFAF8;
+  }
+
+  &__text {
+    margin: 20px 0 12px;
+  }
+}

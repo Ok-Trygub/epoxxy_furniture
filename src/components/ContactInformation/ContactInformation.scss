@@ -1,0 +1,23 @@
+@import "src/assets/styles/styles_config";
+
+.mainPage{
+  background-color: #FFFFFF;
+  padding: 40px 16px;
+}
+
+.textTitle{
+  margin-bottom: 20px;
+  color: #422F26;
+}
+
+@include desktop-xl {
+  .mainPage{
+    padding: 50px 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mainPage{
+    padding: 80px 120px;
+  }
+}

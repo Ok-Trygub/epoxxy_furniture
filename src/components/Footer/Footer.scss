@@ -1,0 +1,171 @@
+@import "src/assets/styles/styles_config";
+
+.footer {
+  background-color: #FFFFFF;
+  padding-bottom: 20px;
+  color: #422F26;
+
+  &__logo {
+    width: 82px;
+    height: 22px;
+  }
+
+  &__logo:hover,
+  &__logo:active {
+    cursor: pointer;
+  }
+
+  &__divider {
+    color: #E05614;
+    opacity: initial;
+    border-top: 1px solid;
+    margin: 0 0 40px;
+  }
+
+  &__divider2 {
+    margin: 40px 0 20px;
+  }
+
+  &__title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #32324D;
+    font-weight: 600;
+  }
+
+  &__scheduleText {
+    color: #666666;
+    margin-bottom: 40px;
+  }
+
+  &__ordersText {
+    color: #666666;
+  }
+
+  &__subscribeWrapper {
+    padding: 40px 0 0;
+  }
+
+  &__subscribeText {
+    padding: 16px 0 30px;
+    color: #666666;
+  }
+
+  &__paymentText {
+    margin-bottom: 40px;
+  }
+
+  &__faq {
+    margin-bottom: 40px;
+  }
+
+  &__fbIcon {
+    margin-right: 12px;
+  }
+
+  &__email {
+    width: 100%;
+    height: 46px;
+    border: 1px solid #666666;
+    padding: 3px 15px 3px;
+  }
+
+  &__submitBtn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+  }
+
+  &__email:active, &__email:hover, &__email:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &__email::placeholder {
+    color: #999999;
+  }
+
+  &__rightsText {
+    color: #999999;
+  }
+}
+
+.navWrapper {
+  padding: 64px 0 60px;
+}
+
+.nav-link {
+  letter-spacing: 2px;
+  color: $navigationColor;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  padding: 0 0 1px 0;
+  margin: 0 0 30px 0;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+  color: $navigationColor;
+}
+
+
+@include desktop {
+  .footer {
+
+    &__divider {
+      margin: 0 0 40px;
+    }
+
+    &__divider2 {
+      margin: 40px 0 20px;
+    }
+
+    &__subscribeWrapperDesktop {
+      padding: 0;
+      margin: 0 0 16px 0;
+    }
+
+    &__scheduleText {
+      margin: 0 0 30px 0;
+    }
+
+    .nav-link:hover, .nav-link:active, {
+      border-bottom: 1px solid #FF8A52;
+      color: #32324D !important;
+    }
+
+    a:active, a:focus, a:hover {
+      text-decoration: none;
+    }
+
+    .nav-link:focus, .nav-link:hover {
+      color: #32324D !important;
+    }
+
+    a:active, a:focus, a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .navWrapper {
+    padding: 60px 0 78px;
+  }
+
+  .navbar-expand .navbar-nav .nav-link {
+    padding: 0;
+    margin: 0 30px 0 0;
+  }
+}
+
+
+@include desktop-xl {
+  .footer {
+    &__email {
+      width: 360px;
+    }
+  }
+}

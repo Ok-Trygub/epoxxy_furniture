@@ -1,0 +1,74 @@
+@import "src/assets/styles/styles_config";
+
+.aboutUs {
+  background-color: #FBFAF8;
+  padding: 24px 0 80px;
+  margin-bottom: 80px;
+
+  &__title {
+    letter-spacing: 3px;
+    font-size: 24px;
+    color: $navigationColor;
+  }
+
+  &__mainTitle {
+    margin: 30px 0 30px;
+  }
+
+  &__textTitle {
+    margin: 30px 0 40px;
+  }
+
+  &__title {
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: $navigationColor;
+  }
+
+  &__textWrapper {
+    padding-bottom: 40px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  &__mobCarouselWrapper {
+    margin-bottom: 130px;
+  }
+}
+
+
+@include desktop {
+  .aboutUs {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__mainTitle {
+      margin: 54px 0 54px;
+    }
+
+    &__textWrapper {
+      padding: 100px 0 100px;
+    }
+
+    &__secondTextWrapper {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding-bottom: 80px;
+    }
+
+    &__descCarouselWrapper {
+      margin-bottom: 200px;
+    }
+  }
+}
+
+@include desktop-xl {
+  .aboutUs {
+    padding: 40px 0 120px;
+    margin-bottom: 100px;
+  }
+}

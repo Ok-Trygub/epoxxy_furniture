@@ -1,0 +1,123 @@
+@import "src/assets/styles/styles_config";
+
+.furniture {
+  color: $navigationColor;
+  background-color: #FBFAF8;
+  margin-bottom: 80px;
+
+  .container {
+    padding-top: 24px;
+    padding-bottom: 80px;
+  }
+
+  &__title {
+    letter-spacing: 3px;
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 30px 0 30px;
+  }
+
+  &__btn {
+    height: 46px;
+    letter-spacing: 2px;
+    background-color: #FFFFFF;
+    border: 1px solid #E05614;
+  }
+
+  &__activeBtn {
+    background-color: #E05614;
+    color: #FFFFFF;
+  }
+
+  &__divider {
+    margin: 30px 0 30px;
+  }
+
+  &__sortWrapper {
+    display: none;
+  }
+
+  &__sortItemWrapper {
+    border: 1px solid #E3DCCF;
+    padding: 8px 14px;
+    margin: 10px;
+    background-color: #FFFFFF;
+  }
+
+  &__sortName {
+    font-size: 16px;
+    line-height: 20px;
+    color: #E05614;
+    margin-right: 6px;
+  }
+
+  &__sortValue {
+    letter-spacing: 1px;
+    color: #422F26;
+  }
+}
+
+.catalogPagination {
+  margin-bottom: 0;
+
+  .page-link {
+    padding: 11px 10px 14px 18px;
+    font-size: 16px;
+    color: #E05614;
+    background-color: #FFFFFF;
+    border: 1px solid #E3DCCF;
+    border-radius: 50%;
+    box-shadow: none;
+    width: 46px;
+    height: 46px;
+  }
+
+  .active > .page-link, .page-link.active {
+    background-color: #FF8A52;
+    border-color: #FF8A52;
+    color: #FFFFFF;
+  }
+
+  .page-item:first-child .page-link {
+    border: 1px solid #422F26;
+    border-radius: 50%;
+    color: #422F26;
+    padding: 7px 10px 14px 18px;
+    margin-right: 5px;
+  }
+
+  .page-item:last-child .page-link {
+    border: 1px solid #422F26;
+    border-radius: 50%;
+    color: #422F26;
+    padding: 7px 10px 14px 18px;
+  }
+
+  .page-item:not(:first-child) .page-link {
+    margin: 0 5px 0;
+  }
+}
+
+@include desktop {
+  .furniture {
+    .container {
+      padding-top: 40px;
+      padding-bottom: 100px;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin: 54px 0 30px;
+    }
+
+    &__divider {
+      margin: 40px 0 40px;
+    }
+  }
+}
+
+@include desktop-xl {
+  .furniture {
+    margin-bottom: 100px;
+  }
+}
