@@ -13,3 +13,13 @@
 ![Alt-текст](./src/assets/images/epoxxy_3.png)
 
 ![Alt-текст](./src/assets/images/epoxxy_4.png)
+
+![Alt-текст](./src/assets/images/epoxxy_5.png)
+
+![Alt-текст](./src/assets/images/epoxxy_6.png)
+
+![Alt-текст](./src/assets/images/epoxxy_7.png)
+
+![Alt-текст](./src/assets/images/epoxxy_8.png)
+
+![Alt-текст](./src/assets/images/epoxxy_9.png)
