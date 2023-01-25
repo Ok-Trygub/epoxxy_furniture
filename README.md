@@ -5,6 +5,7 @@
 - React
 - React Router
 
+#### [You can see this layout here](https://epoxxyfurniture.vercel.app/)
 
 ![Alt-текст](./src/assets/images/epoxxy_1.png)
 
